@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow:300,regular,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: "SFProDisplay-Bold";
+    src: local("./fonts/SFProDisplay-Bold"),
+        local("./fonts/SFProDisplay-Bold"),
+        url("./fonts/SFProDisplay-Bold.woff2") format("woff2"),
+        url("./fonts/SFProDisplay-Bold.woff") format("woff");
+    font-weight: 700
+}
+  
+@font-face {
+    font-family: "SFProDisplay-Regular";
+    src: local("./fonts/SFProDisplay-Regular"),
+        local("./fonts/SFProDisplay-Regular"),
+        url("./fonts/SFProDisplay-Regular.woff2") format("woff2"),
+        url("./fonts/SFProDisplay-Regular.woff") format("woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "SFProDisplay-Semibold";
+    src: local("./fonts/SFProDisplay-Semibold"),
+        local("./fonts/SFProDisplay-Semibold"),
+        url("./fonts/SFProDisplay-Semibold.woff2") format("woff2"),
+        url("./fonts/SFProDisplay-Semibold.woff") format("woff");
+    font-weight: 600
+}
+  
+@font-face {
+    font-family: "SFProDisplay-Medium";
+    src: local("./fonts/SFProDisplay-Medium"),
+        local("./fonts/SFProDisplay-Medium"),
+        url("./fonts/SFProDisplay-Medium.woff2") format("woff2"),
+        url("./fonts/SFProDisplay-Medium.woff") format("woff");
+    font-weight: 500
+}
+
+body {
+    font-family: "SFProDisplay-Regular";
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-height: 100%;
+}
+#app main {
+    flex: 1 1 auto
+}

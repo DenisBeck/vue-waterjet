@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "model_name": "Sea-doo Spark 2"
+    },
+    {
+        "id": 2,
+        "model_name": "SeaDoo Spark 90"
+    },
+    {
+        "id": 3,
+        "model_name": "SeaDoo GTI 155"
+    },
+    {
+        "id": 4,
+        "model_name": "SeaDoo GTR 230"
+    },
+    {
+        "id": 5,
+        "model_name": "Echomap Plus"
+    },
+    {
+        "id": 6,
+        "model_name": "D.E.S.S.TM"
+    },
+    {
+        "id": 7,
+        "model_name": "DF"
+    }
+]

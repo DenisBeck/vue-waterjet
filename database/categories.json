@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "category_name": "Квадроциклы",
+        "image_url": "/assets/img/quadbikes/bike_cat.png"
+    },
+    {
+        "id": 2,
+        "category_name": "Катера",
+        "image_url": "/assets/img/boats/boats_cat.png"
+    },
+    {
+        "id": 3,
+        "category_name": "Гидроциклы",
+        "image_url": "/assets/img/waterjets/jet_cat.png"
+    },
+    {
+        "id": 5,
+        "category_name": "Вездеходы",
+        "image_url": "/assets/img/cross/cross_cat.png"
+    },
+    {
+        "id": 6,
+        "category_name": "Снегоходы",
+        "image_url": "/assets/img/snowjets/snowjet_cat.png"
+    },
+    {
+        "id": 7,
+        "category_name": "Двигатели",
+        "image_url": "/assets/img/motors/motors_cat.png"
+    },
+    {
+        "id": 9,
+        "category_name": "Электроника",
+        "image_url": "/assets/img/electronics/electronics_cat.png"
+    },
+    {
+        "id": 10,
+        "category_name": "Аксессуары",
+        "image_url": "/assets/img/accessories/accessories_cat.png"
+    }
+]

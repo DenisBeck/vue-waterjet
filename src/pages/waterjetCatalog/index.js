@@ -1,0 +1,1 @@
+export { default as WaterjetCatalog } from './WaterjetCatalog.vue'

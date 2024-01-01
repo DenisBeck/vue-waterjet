@@ -1,0 +1,1 @@
+export { default as WaterjetBurger } from './WaterjetBurger.vue'

@@ -1,0 +1,1 @@
+export { default as WaterjetFooter } from './WaterjetFooter.vue'

@@ -1,0 +1,2168 @@
+[
+    {
+        "id": 1,
+        "category_id": 3,
+        "title": "Гидроцикл BRP SeaDoo GTI 130hp SE Black\\Mango",
+        "image_url": "/assets/img/waterjets/image1.png",
+        "price_old": 1113090,
+        "price_new": 1049500,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "category_id": 3,
+        "title": "Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic",
+        "image_url": "/assets/img/waterjets/image2.png",
+        "price_old": 1200475,
+        "price_new": 1100475,
+        "code": "366655-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": [
+            {
+                "action_id": 1
+            }
+        ],
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "category_id": 3,
+        "title": "Гидроцикл BRP SeaDoo GTR 230hp X California green",
+        "image_url": "/assets/img/waterjets/image3.png",
+        "price_old": 1364535,
+        "price_new": 1323700,
+        "code": "366656-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "category_id": 3,
+        "title": "Гидроцикл BRP SeaDoo GTR 230hp STD Black / Gulfstream",
+        "image_url": "/assets/img/waterjets/image4.png",
+        "price_old": 1200475,
+        "price_new": 1100475,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 3,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2019,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": []
+    },
+    {
+        "id": 5,
+        "category_id": 3,
+        "title": "Гидроцикл BRP SeaDoo GTX 300hp LTD Liquid Metal",
+        "image_url": "/assets/img/waterjets/image5.png",
+        "price_old": 1660325,
+        "price_new": 1543000,
+        "code": "366658-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 2,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "category_id": 3,
+        "title": "Гидроцикл BRP SeaDoo Spark 60hp 2 up",
+        "image_url": "/assets/img/waterjets/image6.png",
+        "price_old": 793456,
+        "price_new": 732345,
+        "code": "366659-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 2,
+            "model_id": 1,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "category_id": 3,
+        "title": "Гидроцикл BRP SeaDoo Spark GTS 90hp Rental",
+        "image_url": "/assets/img/waterjets/image7.png",
+        "price_old": 901238,
+        "price_new": 857666,
+        "code": "366660-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "category_id": 3,
+        "title": "Гидроцикл BRP SeaDoo WAKE 230hp PRO Teal blue",
+        "image_url": "/assets/img/waterjets/image8.png",
+        "price_old": 1284550,
+        "price_new": 1229711,
+        "code": "366661-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": [
+            {
+                "action_id": 1
+            }
+        ],
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "category_id": 3,
+        "title": "Гидроцикл Spark 2-UP 900 Ho Ace Chili Pepper",
+        "image_url": "/assets/img/waterjets/image9.png",
+        "price_old": 612240,
+        "price_new": 587440,
+        "code": "366662-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 2,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "category_id": 3,
+        "title": "Гидроцикл Spark 2-UP 900 Ho Ace Pineapple",
+        "image_url": "/assets/img/waterjets/image1.png0",
+        "price_old": 612240,
+        "price_new": 587440,
+        "code": "366663-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2017,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "category_id": 3,
+        "title": "Гидроцикл BRP Sea-doo Spark 2-UP 900 Ace Vanilla",
+        "image_url": "/assets/img/waterjets/image1.png1",
+        "price_old": 1200475,
+        "price_new": 1100475,
+        "code": "366665-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 2,
+            "model_id": 2,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 220
+        },
+        "rating": 4,
+        "action": [
+            {
+                "action_id": 1
+            }
+        ],
+        "in_stock": []
+    },
+    {
+        "id": 12,
+        "category_id": 3,
+        "title": "Гидроцикл Spark 3-UP 900 HO Ace IBR Blueberry",
+        "image_url": "/assets/img/waterjets/image1.png2",
+        "price_old": 612240,
+        "price_new": 587440,
+        "code": "366664-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 3,
+            "model_id": 4,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2019,
+            "speed_max": 240
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": []
+    },
+    {
+        "id": 13,
+        "category_id": 6,
+        "title": "Снегоход BRP SeaDoo GTI 130hp SE Black\\Mango",
+        "image_url": "/assets/img/snowjets/image1.png",
+        "price_old": 1113090,
+        "price_new": 1049500,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "category_id": 6,
+        "title": "Снегоход BRP SeaDoo GTI 130hp SE Black\\Mango",
+        "image_url": "/assets/img/snowjets/image2.png",
+        "price_old": 1113090,
+        "price_new": 1049500,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "category_id": 6,
+        "title": "Снегоход BRP SeaDoo GTI 130hp SE Black\\Mango",
+        "image_url": "/assets/img/snowjets/image3.png",
+        "price_old": 1113090,
+        "price_new": 1049500,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "category_id": 6,
+        "title": "Снегоход BRP SeaDoo GTI 130hp SE Black\\Mango",
+        "image_url": "/assets/img/snowjets/image4.png",
+        "price_old": 1113090,
+        "price_new": 1049500,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "category_id": 6,
+        "title": "Снегоход BRP SeaDoo GTI 130hp SE Black\\Mango",
+        "image_url": "/assets/img/snowjets/image5.png",
+        "price_old": 1113090,
+        "price_new": 1049500,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "category_id": 6,
+        "title": "Снегоход BRP SeaDoo GTI 130hp SE Black\\Mango",
+        "image_url": "/assets/img/snowjets/image6.png",
+        "price_old": 1113090,
+        "price_new": 1049500,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "category_id": 6,
+        "title": "Снегоход BRP SeaDoo GTI 130hp SE Black\\Mango",
+        "image_url": "/assets/img/snowjets/image7.png",
+        "price_old": 1113090,
+        "price_new": 1049500,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "category_id": 1,
+        "title": "Квадроцикл BRP SeaDoo GTI 130hp SE Black\\Mango",
+        "image_url": "/assets/img/quadbikes/image1.png",
+        "price_old": 1113090,
+        "price_new": 1049500,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "category_id": 1,
+        "title": "Квадроцикл BRP SeaDoo GTI 130hp SE Black\\Mango",
+        "image_url": "/assets/img/quadbikes/image2.png",
+        "price_old": 1113090,
+        "price_new": 1049500,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "category_id": 1,
+        "title": "Квадроцикл BRP SeaDoo GTI 130hp SE Black\\Mango",
+        "image_url": "/assets/img/quadbikes/image3.png",
+        "price_old": 1113090,
+        "price_new": 1049500,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 23,
+        "category_id": 1,
+        "title": "Квадроцикл BRP SeaDoo GTI 130hp SE Black\\Mango",
+        "image_url": "/assets/img/quadbikes/image4.png",
+        "price_old": 1113090,
+        "price_new": 1049500,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "category_id": 1,
+        "title": "Квадроцикл BRP SeaDoo GTI 130hp SE Black\\Mango",
+        "image_url": "/assets/img/quadbikes/image5.png",
+        "price_old": 1113090,
+        "price_new": 1049500,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 25,
+        "category_id": 1,
+        "title": "Квадроцикл BRP SeaDoo GTI 130hp SE Black\\Mango",
+        "image_url": "/assets/img/quadbikes/image6.png",
+        "price_old": 1113090,
+        "price_new": 1049500,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 26,
+        "category_id": 1,
+        "title": "Квадроцикл BRP SeaDoo GTI 130hp SE Black\\Mango",
+        "image_url": "/assets/img/quadbikes/image7.png",
+        "price_old": 1113090,
+        "price_new": 1049500,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 27,
+        "category_id": 1,
+        "title": "Квадроцикл BRP SeaDoo GTI 130hp SE Black\\Mango",
+        "image_url": "/assets/img/quadbikes/image8.png",
+        "price_old": 1113090,
+        "price_new": 1049500,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 28,
+        "category_id": 1,
+        "title": "Квадроцикл BRP SeaDoo GTI 130hp SE Black\\Mango",
+        "image_url": "/assets/img/quadbikes/image9.png",
+        "price_old": 1113090,
+        "price_new": 1049500,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 29,
+        "category_id": 7,
+        "title": "Двигатель BRP SeaDoo GTI 130hp SE Black\\Mango",
+        "image_url": "/assets/img/motors/image1.png",
+        "price_old": 1113090,
+        "price_new": 1049500,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 30,
+        "category_id": 7,
+        "title": "Двигатель BRP SeaDoo GTI 130hp SE Black\\Mango",
+        "image_url": "/assets/img/motors/image2.png",
+        "price_old": 1113090,
+        "price_new": 1049500,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 31,
+        "category_id": 7,
+        "title": "Двигатель BRP SeaDoo GTI 130hp SE Black\\Mango",
+        "image_url": "/assets/img/motors/image3.png",
+        "price_old": 1113090,
+        "price_new": 1049500,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 32,
+        "category_id": 7,
+        "title": "Двигатель BRP SeaDoo GTI 130hp SE Black\\Mango",
+        "image_url": "/assets/img/motors/image4.png",
+        "price_old": 1113090,
+        "price_new": 1049500,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 33,
+        "category_id": 7,
+        "title": "Двигатель BRP SeaDoo GTI 130hp SE Black\\Mango",
+        "image_url": "/assets/img/motors/image5.png",
+        "price_old": 1113090,
+        "price_new": 1049500,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 34,
+        "category_id": 7,
+        "title": "Двигатель BRP SeaDoo GTI 130hp SE Black\\Mango",
+        "image_url": "/assets/img/motors/image6.png",
+        "price_old": 1113090,
+        "price_new": 1049500,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 35,
+        "category_id": 7,
+        "title": "Двигатель BRP SeaDoo GTI 130hp SE Black\\Mango",
+        "image_url": "/assets/img/motors/image7.png",
+        "price_old": 1113090,
+        "price_new": 1049500,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 36,
+        "category_id": 9,
+        "title": "BRP Audio-Premium System",
+        "image_url": "/assets/img/electronics/image1.png",
+        "price_old": 70000,
+        "price_new": 68000,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 37,
+        "category_id": 9,
+        "title": "BRP Audio-портативная система",
+        "image_url": "/assets/img/electronics/image2.png",
+        "price_old": 70000,
+        "price_new": 68000,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": [
+            {
+                "action_id": 1
+            }
+        ],
+        "in_stock": []
+    },
+    {
+        "id": 38,
+        "category_id": 9,
+        "title": "Garmin Echomap Plus 62cv",
+        "image_url": "/assets/img/electronics/image3.png",
+        "price_old": 70000,
+        "price_new": 68000,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 39,
+        "category_id": 10,
+        "title": "Водонепроницаемый Рюкзак",
+        "image_url": "/assets/img/accessories/image1.png",
+        "price_old": 10800,
+        "price_new": 9800,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 40,
+        "category_id": 10,
+        "title": "Спасательный жилет BRP Men's Airflow PFD",
+        "image_url": "/assets/img/accessories/image2.png",
+        "price_old": 8000,
+        "price_new": 6900,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": [
+            {
+                "action_id": 1
+            }
+        ],
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 41,
+        "category_id": 10,
+        "title": "Спасательное снаряжение",
+        "image_url": "/assets/img/accessories/image3.png",
+        "price_old": 8000,
+        "price_new": 6900,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": [
+            {
+                "action_id": 1
+            }
+        ],
+        "in_stock": []
+    },
+    {
+        "id": 42,
+        "category_id": 10,
+        "title": "Мужской костюм 3мм",
+        "image_url": "/assets/img/accessories/image4.png",
+        "price_old": 8000,
+        "price_new": 7000,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 43,
+        "category_id": 10,
+        "title": "RF D.E.S.S.TM Key",
+        "image_url": "/assets/img/accessories/image5.png",
+        "price_old": 8000,
+        "price_new": 6900,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": [
+            {
+                "action_id": 1
+            }
+        ],
+        "in_stock": []
+    },
+    {
+        "id": 44,
+        "category_id": 5,
+        "title": "Вездеход BRP SeaDoo GTI 130hp SE Black\\Mango",
+        "image_url": "/assets/img/cross/image1.png",
+        "price_old": 800000,
+        "price_new": 690000,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 45,
+        "category_id": 5,
+        "title": "Вездеход BRP SeaDoo GTI 130hp SE Black\\Mango",
+        "image_url": "/assets/img/cross/image2.png",
+        "price_old": 800000,
+        "price_new": 690000,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 46,
+        "category_id": 5,
+        "title": "Вездеход BRP SeaDoo GTI 130hp SE Black\\Mango",
+        "image_url": "/assets/img/cross/image3.png",
+        "price_old": 800000,
+        "price_new": 690000,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 47,
+        "category_id": 5,
+        "title": "Вездеход BRP SeaDoo GTI 130hp SE Black\\Mango",
+        "image_url": "/assets/img/cross/image4.png",
+        "price_old": 800000,
+        "price_new": 690000,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 48,
+        "category_id": 5,
+        "title": "Вездеход BRP SeaDoo GTI 130hp SE Black\\Mango",
+        "image_url": "/assets/img/cross/image5.png",
+        "price_old": 800000,
+        "price_new": 690000,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 49,
+        "category_id": 5,
+        "title": "Вездеход BRP SeaDoo GTI 130hp SE Black\\Mango",
+        "image_url": "/assets/img/cross/image6.png",
+        "price_old": 800000,
+        "price_new": 690000,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 50,
+        "category_id": 2,
+        "title": "Катер BRP SeaDoo GTI 130hp SE Black\\Mango",
+        "image_url": "/assets/img/boats/image1.png",
+        "price_old": 800000,
+        "price_new": 690000,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 51,
+        "category_id": 2,
+        "title": "Катер BRP SeaDoo GTI 130hp SE Black\\Mango",
+        "image_url": "/assets/img/boats/image2.png",
+        "price_old": 800000,
+        "price_new": 690000,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 52,
+        "category_id": 2,
+        "title": "Катер BRP SeaDoo GTI 130hp SE Black\\Mango",
+        "image_url": "/assets/img/boats/image3.png",
+        "price_old": 800000,
+        "price_new": 690000,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 53,
+        "category_id": 2,
+        "title": "Катер BRP SeaDoo GTI 130hp SE Black\\Mango",
+        "image_url": "/assets/img/boats/image4.png",
+        "price_old": 800000,
+        "price_new": 690000,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 54,
+        "category_id": 2,
+        "title": "Катер BRP SeaDoo GTI 130hp SE Black\\Mango",
+        "image_url": "/assets/img/boats/image5.png",
+        "price_old": 800000,
+        "price_new": 690000,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 55,
+        "category_id": 2,
+        "title": "Катер BRP SeaDoo GTI 130hp SE Black\\Mango",
+        "image_url": "/assets/img/boats/image6.png",
+        "price_old": 800000,
+        "price_new": 690000,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    },
+    {
+        "id": 56,
+        "category_id": 2,
+        "title": "Катер BRP SeaDoo GTI 130hp SE Black\\Mango",
+        "image_url": "/assets/img/boats/image7.png",
+        "price_old": 800000,
+        "price_new": 690000,
+        "code": "366666-2",
+        "features": {
+            "country_id": 5,
+            "brand_id": 1,
+            "model_id": 3,
+            "seat_count": 3,
+            "power": 155,
+            "engine_type": "Бензиновый",
+            "engine_power": 155,
+            "manufacture_year": 2018,
+            "speed_max": 230
+        },
+        "rating": 4,
+        "action": null,
+        "in_stock": [
+            {
+                "shop_id": 1,
+                "count": 1
+            },
+            {
+                "shop_id": 2,
+                "count": 2
+            },
+            {
+                "shop_id": 3,
+                "count": 0
+            },
+            {
+                "shop_id": 4,
+                "count": 0
+            }
+        ]
+    }
+]

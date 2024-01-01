@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "brand_name": "BRP"
+    },
+    {
+        "id": 2,
+        "brand_name": "Spark 2"
+    },
+    {
+        "id": 3,
+        "brand_name": "Spark 3"
+    },
+    {
+        "id": 4,
+        "brand_name": "Suzuki"
+    },
+    {
+        "id": 5,
+        "brand_name": "Garmin"
+    }
+]

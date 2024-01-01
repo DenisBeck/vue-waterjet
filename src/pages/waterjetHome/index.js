@@ -1,0 +1,1 @@
+export { default as WaterjetHome } from './WaterjetHome.vue'

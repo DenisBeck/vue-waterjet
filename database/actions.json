@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "action_name": "Sale"
+    },
+    {
+        "id": 2,
+        "action_name": "New"
+    },
+    {
+        "id": 3,
+        "action_name": "Hit"
+    },
+    {
+        "id": 4,
+        "action_name": "Дилер"
+    }
+]

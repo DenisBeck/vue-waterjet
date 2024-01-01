@@ -1,0 +1,1 @@
+export { default as WaterjetLogo } from './WaterjetLogo.vue'
