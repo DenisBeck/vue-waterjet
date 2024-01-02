@@ -10,7 +10,7 @@ export default {
 
 export const Default = {
 
-    render: (args) => ({
+    render: () => ({
         components: { WaterjetBurger },
         template: '<waterjet-burger v-bind="args" />'
     })

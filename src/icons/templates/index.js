@@ -5,4 +5,6 @@ export { default as WaterjetInstagramIcon } from './WaterjetInstagramIcon.vue'
 export { default as WaterjetVkIcon } from './WaterjetVkIcon.vue'
 export { default as WaterjetFacebookIcon } from './WaterjetFacebookIcon.vue'
 export { default as WaterjetYoutubeIcon } from './WaterjetYoutubeIcon.vue'
+export { default as WaterjetCartIcon } from './WaterjetCartIcon.vue'
+export { default as WaterjetHeartIcon } from './WaterjetHeartIcon.vue'
 
