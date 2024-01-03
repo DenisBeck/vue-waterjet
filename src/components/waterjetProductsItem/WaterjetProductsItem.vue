@@ -34,9 +34,9 @@ onMounted(async () => {
 </script>
 
 <template>
-    <div v-if="item" class="product-item w-1/4 border border-slate-300 relative">
-        <div class="mt-10 flex justify-center mb-2 px-6">
-            <img :src="item.image_url" :alt="item.title">
+    <div v-if="item" class="product-item border border-slate-300 relative h-full flex flex-col justify-between">
+        <div class="mt-10 flex justify-center mb-2 px-6 min-w-48 min-h-48">
+            <img class="object-contain" :src="item.image_url" :alt="item.title">
         </div>
         <div :class="{'font-bold': action}" class="text-lg text-center mb-2 px-10">{{ item.title }}</div>
         <div v-if="action" class="bg-slate-200 flex items-center justify-center py-6 px-5">
@@ -79,7 +79,7 @@ onMounted(async () => {
     border-bottom: 1px solid rgb(203 213 225);
 }
 .product-item {
-    min-width: 264px
+    width: 100%
 }
 
 </style>
