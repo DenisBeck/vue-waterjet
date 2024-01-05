@@ -38,7 +38,7 @@ onMounted(async () => {
         <div class="mt-10 flex justify-center mb-2 px-6 min-w-48 min-h-48">
             <img class="object-contain" :src="item.image_url" :alt="item.title">
         </div>
-        <div :class="{'font-bold': action}" class="text-lg text-center mb-2 px-10">{{ item.title }}</div>
+        <div :class="{'font-bold': action}" class="text-lg text-center max-h-20 overflow-hidden mb-2 px-10">{{ item.title }}</div>
         <div v-if="action" class="bg-slate-200 flex items-center justify-center py-6 px-5">
             <p class="text-center text-lg flex flex-col">Акция действует до
                 <span class="text-blue-700 font-bold">31.08.2020</span>
@@ -70,7 +70,7 @@ onMounted(async () => {
 
 <style scoped>
 .price {
-    font-family: 'Barlow';
+    font-family: 'Roboto';
 }
 .throwline {
     top: 2px;

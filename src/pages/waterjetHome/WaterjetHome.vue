@@ -1,13 +1,22 @@
 <script setup>
-import { computed, onMounted } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 
+import { useCategoryStore } from '@/stores/CategoryStore'
 import { useProductStore } from '@/stores/ProductStore'
 import { useActionStore } from '@/stores/ActionStore'
 import { useSlideStore } from '@/stores/SlideStore'
 import { storeToRefs } from 'pinia'
 
-import { WaterjetProductsItem } from '@/components/waterjetProductsItem';
-import { WaterjetSlider } from '@/components/waterjetSlider';
+import { WaterjetProductsItem } from '@/components/waterjetProductsItem'
+import { WaterjetCategoriesItem } from '@/components/waterjetCategoriesItem'
+import { WaterjetNavList } from '@/components/ui/waterjetNavList'
+import { WaterjetSlider } from '@/components/waterjetSlider'
+import { WaterjetTabs } from '@/components/waterjetTabs'
+import { WaterjetInput } from '@/components/ui/waterjetInput'
+import { WaterjetButton } from '@/components/ui/waterjetButton'
+import { WaterjetTitle } from '@/components/ui/waterjetTitle'
+import { WaterjetPromo } from '@/components/waterjetPromo'
+
 
 const slideStore = useSlideStore()
 const { slides } = storeToRefs(slideStore)
@@ -21,8 +30,32 @@ const actionStore = useActionStore()
 const { actions } = storeToRefs(actionStore)
 const { fetchActions } = actionStore
 
+const categoryStore = useCategoryStore()
+const { categories } = storeToRefs(categoryStore)
+const { fetchCategories } = categoryStore
+
 const randomId = computed(() => Math.floor(Math.random() * products.value.length))
 const actionProduct = computed(() => products.value.find(item => item.id === randomId.value) || products.value[0])
+const categoryLabels = computed(() => categories.value.map(item => ({ id: item.id, label: item.category_name })))
+
+const tabItems = ref([
+    {
+        id: 1,
+        label: 'Поиск по номеру',
+        placeholder: 'Введите номер'
+    },
+    {
+        id: 2,
+        label: 'Поиск по марке',
+        placeholder: 'Введите марку'
+    },
+    {
+        id: 3,
+        label: 'Поиск по названию товара',
+        placeholder: 'Введите название'
+    }
+])
+
 
 onMounted(async () => {
     if(!products.value.length) {
@@ -34,18 +67,58 @@ onMounted(async () => {
     if(!slides.value.length) {
         await fetchSlides()
     }
+    if(!categories.value.length) {
+        await fetchCategories()
+        if(categories.length) {
+            console.log(categories)
+            categoryLabels.value = categories.map(item => ({ label: item.category_name }))
+        }
+    }
 })
 </script>
 
 <template>
-    <div class="hero flex max-w-screen-xl mx-auto px-5 mb-5 w-full gap-9">
+    <section class="hero flex max-w-screen-xl mx-auto px-5 mb-20 w-full gap-9 flex-col md:flex-row">
         <div class="flex-auto">
-            <waterjet-slider :slides="slides" />
+            <waterjet-slider :slides="slides" navigation pagination v-slot="slotProps">
+                <div class="h-full">
+                    <img :src="slotProps.item.image_url" :alt="slotProps.item.text" class="object-cover w-full h-full" />
+                </div>
+                <div class="shadow-text absolute z-10 top-14 right-10 md:right-20 lg:right-32 text-center text-white text-2xl md:text-4xl lg:text-6xl font-bold w-32 md:w-48 lg:w-96">{{ slotProps.item.text }}</div>
+            </waterjet-slider>
         </div>
         <div class="hit-product">
             <waterjet-products-item v-if="actionProduct" :item="actionProduct" action />
         </div>
-    </div>
+    </section>
+    <section class="max-w-screen-xl mx-auto px-5 mb-20 w-full gap-9">
+        <waterjet-tabs :tabItems="tabItems">
+            <template v-for="item in tabItems" #[item.id] :key="item.id">
+                <div class="flex w-full ">
+                    <waterjet-input :placeholder="item.placeholder" class="search basis-auto flex-1 bg-slate-200 h-12" />
+                    <waterjet-button label="Искать" class="w-32"/>
+                </div>
+            </template>
+        </waterjet-tabs>
+    </section>
+    <section class="max-w-screen-xl mx-auto px-5 mb-20 w-full">
+        <waterjet-nav-list :items="categories" v-slot="slotProps" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 lg:gap-7">
+            <waterjet-categories-item :item="slotProps.item" />
+        </waterjet-nav-list>
+    </section>
+    <section class="max-w-screen-xl mx-auto px-5 mb-20 w-full">
+        <waterjet-promo />
+    </section>
+    <section class="max-w-screen-xl mx-auto px-5 mb-20 w-full">
+        <waterjet-title label="Популярные товары" class="mb-4"/>
+        <waterjet-tabs v-if="categoryLabels.length" :tabItems="categoryLabels" theme="categories">
+            <template v-for="category in categories" #[category.id] :key="category.id">
+                <waterjet-slider :slidesOnPage="4" :slides="products.filter(item => item.category_id === category.id)" navigation v-slot="slotProps" class="products-slider">
+                    <waterjet-products-item :item="slotProps.item" />
+                </waterjet-slider>
+            </template>
+        </waterjet-tabs>
+    </section>
 </template>
 
 <style>
@@ -55,4 +128,10 @@ onMounted(async () => {
 .hit-product {
     flex: 0 0 264px;
 }
-</style>
+.search input {
+    background: #F0F0F4;
+}
+.products-slider {
+    min-height: 440px;
+}
+</style>@/components/waterjetPromo

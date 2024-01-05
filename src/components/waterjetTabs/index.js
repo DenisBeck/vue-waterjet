@@ -1,0 +1,1 @@
+export { default as WaterjetTabs} from './WaterjetTabs.vue'

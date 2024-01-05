@@ -1,0 +1,1 @@
+export { default as WaterjetCategoriesItem } from './WaterjetCategoriesItem.vue'

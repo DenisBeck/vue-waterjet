@@ -19,10 +19,10 @@ const footerLinks2 = ref([
     { id: 4, value: 'Новости', link: '/' }
 ])
 const socials = ref([
-    { id: 1, value: '', link: '', icon: 'WaterjetInstagramIcon' },
-    { id: 1, value: '', link: '', icon: 'WaterjetVkIcon' },
-    { id: 1, value: '', link: '', icon: 'WaterjetFacebookIcon' },
-    { id: 1, value: '', link: '', icon: 'WaterjetYoutubeIcon' }
+    { id: 1, value: '', link: '/', icon: 'WaterjetInstagramIcon' },
+    { id: 1, value: '', link: '/', icon: 'WaterjetVkIcon' },
+    { id: 1, value: '', link: '/', icon: 'WaterjetFacebookIcon' },
+    { id: 1, value: '', link: '/', icon: 'WaterjetYoutubeIcon' }
 ])
 
 const blocksInfo = reactive({
@@ -64,8 +64,8 @@ onUnmounted(() => {
                 <div>
                     <h3 class="font-bold text-sm max-w-56 mb-9">Подпишитесь на нашу рассылку и узнавайте о акция быстрее</h3>
                     <div class="flex h-8 mb-6">
-                        <waterjet-input class="border-white h-full mb-4" placeholder="Введите ваш e-mail:" />
-                        <waterjet-button class="h-full uppercase text-xs font-semibold tracking-widest" label="Отправить" />
+                        <waterjet-input class="h-8 mb-4" placeholder="Введите ваш e-mail:" />
+                        <waterjet-button class="uppercase text-xs font-semibold tracking-widest" label="Отправить" />
                     </div>
                     <waterjet-nav-list class="lg:hidden flex gap-7" :items="socials" withIcons />
                 </div>

@@ -12,15 +12,18 @@
         </button>
     </div>
     <script>
-        const container = document.getElementById('container');
-        const button = document.getElementById('button')
+        const tickets = [
+            {from: 'C.-Петербург', to: 'Минск'},
+            {from: 'Киев', to: 'Новосибирск'},
+            {from: 'Череповец', to: 'Москва'},
+            {from: 'Минск', to: 'Киев'},
+            {from: 'Москва', to: 'C.-Петербург'}
+        ];
+        
+        const citiesFrom = tickets.map(item => item.from)
+        const start = citiesFrom.find(item => !tickets.some(ticket => ticket.to === item))
+        console.log(start)
 
-        container.addEventListener('click', () => {
-            alert('Container');
-        }, true);
-        button.addEventListener('click', () => {
-            alert('Button');
-        }, true);
     </script>
 </body>
 </html>

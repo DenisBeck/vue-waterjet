@@ -33,6 +33,11 @@ const topLinks = ref([
 const active = ref(false)
 
 const toggleMenu = () => {
+    if(active.value) {
+        document.documentElement.classList.remove('lock')
+    } else {
+        document.documentElement.classList.add('lock')
+    }
     active.value = !active.value
 }
 
@@ -47,7 +52,7 @@ onMounted(async () => {
 </script>
 
 <template>
-    <header class="max-w-screen-xl mx-auto px-5 mb-5 w-full">
+    <header class="max-w-screen-xl mx-auto px-5 mb-20 w-full">
         <div class="flex items-center relative z-20 justify-between py-4">
             <waterjet-burger :active="active" class="md:hidden relative" @toggle-menu="toggleMenu">
                 <div :style="{transform: active ? 'translateX(0)' : 'translateX(-100%)'}" class="left-0 overflow-x-hidden overflow-y-auto px-5 transition transition-property-left duration-300 fixed bg-white top-24 bottom-0 gap-7 flex flex-col items-center w-full">

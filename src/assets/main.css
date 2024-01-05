@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow:300,regular,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,regular,700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -43,6 +44,9 @@
 
 body {
     font-family: "SFProDisplay-Regular";
+}
+html.lock body {
+    overflow: hidden;
 }
 
 #app {
