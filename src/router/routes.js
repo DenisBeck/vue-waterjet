@@ -17,6 +17,12 @@ export default [
         component: WaterjetCatalog
     },
     {
+        path: '/catalog/category/:id(\\d+)',
+        name: 'catalog/category',
+        component: WaterjetCatalog,
+        props: true
+    },
+    {
         path: '/shops',
         name: 'shops',
         component: WaterjetShops

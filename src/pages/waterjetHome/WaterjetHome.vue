@@ -9,7 +9,7 @@ import { storeToRefs } from 'pinia'
 
 import { WaterjetProductsItem } from '@/components/waterjetProductsItem'
 import { WaterjetCategoriesItem } from '@/components/waterjetCategoriesItem'
-import { WaterjetNavList } from '@/components/ui/waterjetNavList'
+import { WaterjetList } from '@/components/ui/waterjetList'
 import { WaterjetSlider } from '@/components/waterjetSlider'
 import { WaterjetTabs } from '@/components/waterjetTabs'
 import { WaterjetInput } from '@/components/ui/waterjetInput'
@@ -69,16 +69,12 @@ onMounted(async () => {
     }
     if(!categories.value.length) {
         await fetchCategories()
-        if(categories.length) {
-            console.log(categories)
-            categoryLabels.value = categories.map(item => ({ label: item.category_name }))
-        }
     }
 })
 </script>
 
 <template>
-    <section class="hero flex max-w-screen-xl mx-auto px-5 mb-20 w-full gap-9 flex-col md:flex-row">
+    <section class="hero flex max-w-screen-xl mx-auto px-5 mt-10 mb-20 w-full gap-9 flex-col md:flex-row">
         <div class="flex-auto">
             <waterjet-slider :slides="slides" navigation pagination v-slot="slotProps">
                 <div class="h-full">
@@ -102,9 +98,9 @@ onMounted(async () => {
         </waterjet-tabs>
     </section>
     <section class="max-w-screen-xl mx-auto px-5 mb-20 w-full">
-        <waterjet-nav-list :items="categories" v-slot="slotProps" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 lg:gap-7">
+        <waterjet-list :items="categories" v-slot="slotProps" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 lg:gap-7">
             <waterjet-categories-item :item="slotProps.item" />
-        </waterjet-nav-list>
+        </waterjet-list>
     </section>
     <section class="max-w-screen-xl mx-auto px-5 mb-20 w-full">
         <waterjet-promo />
@@ -114,7 +110,7 @@ onMounted(async () => {
         <waterjet-tabs v-if="categoryLabels.length" :tabItems="categoryLabels" theme="categories">
             <template v-for="category in categories" #[category.id] :key="category.id">
                 <waterjet-slider :slidesOnPage="4" :slides="products.filter(item => item.category_id === category.id)" navigation v-slot="slotProps" class="products-slider">
-                    <waterjet-products-item :item="slotProps.item" />
+                    <waterjet-products-item :actions="actions" :item="slotProps.item" />
                 </waterjet-slider>
             </template>
         </waterjet-tabs>
@@ -134,4 +130,4 @@ onMounted(async () => {
 .products-slider {
     min-height: 440px;
 }
-</style>@/components/waterjetPromo
+</style>

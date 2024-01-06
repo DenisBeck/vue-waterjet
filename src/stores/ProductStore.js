@@ -6,9 +6,9 @@ import * as api from '@/api'
 export const useProductStore = defineStore('ProductStore', () => {
     const products = ref([])
 
-    const fetchProducts = async () => {
+    const fetchProducts = async (id) => {
         try {
-            const { data } = await api.products.getProducts()
+            const { data } = await api.products.getProducts(id)
             products.value = data
         } catch (e) {
             console.log(e)

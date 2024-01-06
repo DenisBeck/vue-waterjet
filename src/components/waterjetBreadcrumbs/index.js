@@ -1,0 +1,1 @@
+export { default as WaterjetBreadcrumbs } from './WaterjetBreadcrumbs.vue'

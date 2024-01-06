@@ -1,7 +1,7 @@
 import WaterjetButton from './WaterjetButton.vue'
 
 export default {
-    title: 'Button',
+    title: 'ui/Button',
     component: { WaterjetButton },
     argTypes: {
         onClick: { action: 'click' }

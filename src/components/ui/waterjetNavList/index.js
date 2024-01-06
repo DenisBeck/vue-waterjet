@@ -1,1 +1,0 @@
-export { default as WaterjetNavList } from './WaterjetNavList.vue'

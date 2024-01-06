@@ -2,7 +2,7 @@
 import { ref, reactive, onUnmounted } from 'vue'
 import { WaterjetInput } from '../ui/waterjetInput'
 import { WaterjetButton } from '../ui/waterjetButton'
-import { WaterjetNavList } from '../ui/waterjetNavList'
+import { WaterjetList } from '../ui/waterjetList'
 
 const size = ref(document.documentElement.clientWidth)
 
@@ -67,18 +67,18 @@ onUnmounted(() => {
                         <waterjet-input class="h-8 mb-4" placeholder="Введите ваш e-mail:" />
                         <waterjet-button class="uppercase text-xs font-semibold tracking-widest" label="Отправить" />
                     </div>
-                    <waterjet-nav-list class="lg:hidden flex gap-7" :items="socials" withIcons />
+                    <waterjet-list class="lg:hidden flex gap-7" :items="socials" withIcons />
                 </div>
                 <div>
                     <h3 @click="toggleOpen1" class="font-bold md:text-sm max-w-56 mb-2.5 cursor-pointer md:cursor-default">Информация</h3>
-                    <waterjet-nav-list :style="{height: blocksInfo.link1.open || size > 767 ? `${blocksInfo.link1.height}px` : '0'}" class="transition-height gap-1 flex flex-col md:text-sm overflow-hidden" :items="footerLinks1" />
+                    <waterjet-list :style="{height: blocksInfo.link1.open || size > 767 ? `${blocksInfo.link1.height}px` : '0'}" class="transition-height gap-1 flex flex-col md:text-sm overflow-hidden" :items="footerLinks1" />
                 </div>
                 <div>
                     <h3 @click="toggleOpen2" class="font-bold md:text-sm max-w-56 mb-2.5 cursor-pointer md:cursor-default">Интернет-магазин</h3>
-                    <waterjet-nav-list :style="{height: blocksInfo.link2.open || size > 767 ? `${blocksInfo.link2.height}px` : '0'}" class="transition-height gap-1 flex flex-col md:text-sm overflow-hidden" :items="footerLinks2" />
+                    <waterjet-list :style="{height: blocksInfo.link2.open || size > 767 ? `${blocksInfo.link2.height}px` : '0'}" class="transition-height gap-1 flex flex-col md:text-sm overflow-hidden" :items="footerLinks2" />
                 </div>
                 <div class="self-center lg:block hidden">
-                    <waterjet-nav-list class="flex gap-7" :items="socials" withIcons />
+                    <waterjet-list class="flex gap-7" :items="socials" withIcons />
                 </div>
             </div>
         </div>

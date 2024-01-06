@@ -1,17 +1,11 @@
 <script setup>
-import { useActionStore } from '@/stores/ActionStore'
-import { storeToRefs } from 'pinia'
-
-import WaterjetButton from '../ui/waterjetButton/WaterjetButton.vue';
-import { ref, computed, onMounted } from 'vue'
-
-const actionStore = useActionStore()
-const { actions } = storeToRefs(actionStore)
-const { fetchActions } = actionStore
+import { ref, computed } from 'vue'
+import { WaterjetButton } from '../ui/waterjetButton';
 
 const props = defineProps({
     action: Boolean,
-    item: Object
+    item: Object,
+    actions: Object
 })
 const like = ref(false)
 const actionIds = computed(() => {
@@ -19,17 +13,11 @@ const actionIds = computed(() => {
     return props.item.action.map(item => item.action_id)
 })
 
-const currentActions = computed(() => actions.value.filter(action => actionIds.value.some(id => id === action.id)))
+const currentActions = computed(() => props.actions?.filter(action => actionIds.value.some(id => id === action.id)))
 
 const toggleLike = () => {
     like.value = !like.value
 }
-
-onMounted(async () => {
-    if(!actions.value.length) {
-        await fetchActions()
-    } 
-})
 
 </script>
 
@@ -59,7 +47,7 @@ onMounted(async () => {
             </div>
             <waterjet-button v-if="item['in_stock'].length" class="absolute bottom-0 right-0 rounded-tl-xl" icon="WaterjetCartIcon" />
             <waterjet-button @handle-click="toggleLike" :class="{'active': like}" class="absolute top-0 right-0 bg-transparent hover:bg-transparent heart" icon="WaterjetHeartIcon" />
-            <div v-if="currentActions.length" class="absolute top-0 left-0 flex flex-col">
+            <div v-if="currentActions?.length" class="absolute top-0 left-0 flex flex-col">
                 <div v-for="action in currentActions" :key="action.id" class="bg-blue-700 text-white text-xs uppercase tracking-widest py-2 px-5">
                     {{ action.action_name }}
                 </div>
@@ -79,7 +67,12 @@ onMounted(async () => {
     border-bottom: 1px solid rgb(203 213 225);
 }
 .product-item {
-    width: 100%
+    width: 100%;
+    transition: all 0.3s ease 0s;
+}
+
+.product-item:hover {
+    box-shadow: 3px 3px 20px 0px rgba(50, 50, 50, 0.25);
 }
 
 </style>

@@ -1,7 +1,7 @@
 import WaterjetBurger from "./WaterjetBurger.vue"
 
 export default {
-    title: 'Burger',
+    title: 'ui/Burger',
     component: { WaterjetBurger },
     argTypes: {
         onClick: { action: 'click' }

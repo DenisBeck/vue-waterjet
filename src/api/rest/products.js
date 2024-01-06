@@ -1,7 +1,11 @@
 import { makeRequest } from '../requestConfig'
 
-export const getProducts = () => {
+export const getProducts = (id = null) => {
+    let params = ''
+    if (id) {
+        params = `?category_id=${id}`
+    }
     return makeRequest({
-        url: '/products'
+        url: `/products${params}`
     })
 }

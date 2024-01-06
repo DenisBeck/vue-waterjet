@@ -1,7 +1,7 @@
 import WaterjetInput from './WaterjetInput.vue'
 
 export default {
-    title: 'Input',
+    title: 'ui/Input',
     component: { WaterjetInput },
     argTypes: {
         onChange: { action: 'change' }

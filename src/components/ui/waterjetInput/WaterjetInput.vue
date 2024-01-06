@@ -6,6 +6,6 @@ defineProps({
 
 <template>
     <div class="min-w-50 flex items-center">
-        <input class="h-full w-full px-3 outline-none focus:border-slate-300 focus:placeholder:invisible" :placeholder="placeholder" v-model="text" />
+        <input class="h-full w-full px-3 outline-none focus:border-slate-300 focus:placeholder:invisible" :placeholder="placeholder" />
     </div>
 </template>

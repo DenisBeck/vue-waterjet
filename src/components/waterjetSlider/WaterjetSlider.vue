@@ -58,8 +58,8 @@ onUnmounted(() => {
             </div>
         </div>
         <div v-if="navigation" class="absolute navigation top-1/2 -translate-y-1/2 justify-between text-white flex left-4 right-4">
-            <waterjet-button :style="{'visibility': slideShift <= 0 ? 'hidden' : 'visible'}" @handle-click="() => slideLeft()" class="bg-slate-100 rounded-full hover:bg-slate-300 text-black" icon="WaterjetLeftIcon" />
-            <waterjet-button :style="{'visibility': slideShift >= slides.length - slidesCountOnPage ? 'hidden' : 'visible'}" @handle-click="() => slideRight()" class="bg-slate-100 rounded-full hover:bg-slate-300 text-black" icon="WaterjetRightIcon" />
+            <waterjet-button :style="{'visibility': slideShift <= 0 ? 'hidden' : 'visible'}" @handle-click="() => slideLeft()" class="bg-blue-300 rounded-full hover:bg-blue-500 text-black" icon="WaterjetLeftIcon" />
+            <waterjet-button :style="{'visibility': slideShift >= slides.length - slidesCountOnPage ? 'hidden' : 'visible'}" @handle-click="() => slideRight()" class="bg-blue-300 rounded-full hover:bg-blue-500 text-black" icon="WaterjetRightIcon" />
         </div>
         <div v-if="pagination" class="absolute z-10 flex gap-x-2.5 left-1/2 -translate-x-1/2 bottom-10">
             <waterjet-button v-for="slide,key in slides" :key="slide.id" @handle-click="(args) => chooseSlide(args)"  :label="String(key + 1)" :class="{'active-pagination-item': slideShift === key}" class="bg-transparent hover:bg-transparent rounded-full h-3 w-3 basis-3 pagination-item"/>
