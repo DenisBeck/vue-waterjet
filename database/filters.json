@@ -1,3 +1,300 @@
 {
-    "tags": []
+    "tags": [],
+    "filters": [
+        {
+            "id": 1,
+            "filter_name": "Наличие",
+            "filter_options": [
+                {
+                    "id": 1,
+                    "label": "В наличии",
+                    "value": false
+                },
+                {
+                    "id": 2,
+                    "label": "Под заказ",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "filter_name": "Новинки",
+            "filter_options": [
+                {
+                    "id": 1,
+                    "label": "Все",
+                    "value": false
+                },
+                {
+                    "id": 2,
+                    "label": "Новинки",
+                    "value": false
+                },
+                {
+                    "id": 3,
+                    "label": "Акции",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "filter_name": "Цена",
+            "filter_options": [
+                {
+                    "id": 1,
+                    "label": "от",
+                    "value": 100000
+                },
+                {
+                    "id": 2,
+                    "label": "до",
+                    "value": 500000
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "filter_name": "Мощность",
+            "filter_options": [
+                {
+                    "id": 1,
+                    "value": "90",
+                    "text": "90",
+                    "selected": true
+                },
+                {
+                    "id": 2,
+                    "value": "130",
+                    "text": "130",
+                    "selected": false
+                },
+                {
+                    "id": 3,
+                    "value": "154",
+                    "text": "154",
+                    "selected": false
+                },
+                {
+                    "id": 4,
+                    "value": "230",
+                    "text": "230",
+                    "selected": false
+                },
+                {
+                    "id": 5,
+                    "value": "300",
+                    "text": "300",
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "filter_name": "Мощность двигателя, л.с.",
+            "filter_options": [
+                {
+                    "id": 1,
+                    "value": "90",
+                    "text": "90",
+                    "selected": true
+                },
+                {
+                    "id": 2,
+                    "value": "130",
+                    "text": "130",
+                    "selected": false
+                },
+                {
+                    "id": 3,
+                    "value": "154",
+                    "text": "154",
+                    "selected": false
+                },
+                {
+                    "id": 4,
+                    "value": "230",
+                    "text": "230",
+                    "selected": false
+                },
+                {
+                    "id": 5,
+                    "value": "300",
+                    "text": "300",
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "filter_name": "Макс.скорость",
+            "filter_options": [
+                {
+                    "id": 1,
+                    "value": "90",
+                    "text": "90",
+                    "selected": true
+                },
+                {
+                    "id": 2,
+                    "value": "130",
+                    "text": "130",
+                    "selected": false
+                },
+                {
+                    "id": 3,
+                    "value": "154",
+                    "text": "154",
+                    "selected": false
+                },
+                {
+                    "id": 4,
+                    "value": "230",
+                    "text": "230",
+                    "selected": false
+                },
+                {
+                    "id": 5,
+                    "value": "300",
+                    "text": "300",
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "filter_name": "Бренд",
+            "filter_options": [
+                {
+                    "id": 1,
+                    "label": "BRP",
+                    "value": false
+                },
+                {
+                    "id": 2,
+                    "label": "Spark 2",
+                    "value": false
+                },
+                {
+                    "id": 3,
+                    "label": "Spark 3",
+                    "value": false
+                },
+                {
+                    "id": 4,
+                    "label": "Suzuki",
+                    "value": false
+                },
+                {
+                    "id": 5,
+                    "label": "Garmin",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "filter_name": "Модель",
+            "filter_options": [
+                {
+                    "id": 1,
+                    "label": "Sea-doo Spark 2",
+                    "value": false
+                },
+                {
+                    "id": 2,
+                    "label": "SeaDoo Spark 90",
+                    "value": false
+                },
+                {
+                    "id": 3,
+                    "label": "SeaDoo GTI 155",
+                    "value": false
+                },
+                {
+                    "id": 4,
+                    "label": "SeaDoo GTR 230",
+                    "value": false
+                },
+                {
+                    "id": 5,
+                    "label": "Echomap Plus",
+                    "value": false
+                },
+                {
+                    "id": 6,
+                    "label": "D.E.S.S.TM",
+                    "value": false
+                },
+                {
+                    "id": 7,
+                    "label": "DF",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "filter_name": "Акции",
+            "filter_options": [
+                {
+                    "id": 1,
+                    "label": "SALE",
+                    "value": false
+                },
+                {
+                    "id": 2,
+                    "label": "NEW",
+                    "value": false
+                },
+                {
+                    "id": 3,
+                    "label": "HIT",
+                    "value": false
+                },
+                {
+                    "id": 4,
+                    "label": "ДИЛЕР",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "filter_name": "Страны",
+            "filter_options": [
+                {
+                    "id": 1,
+                    "label": "Россия",
+                    "value": false
+                },
+                {
+                    "id": 2,
+                    "label": "Германия",
+                    "value": false
+                },
+                {
+                    "id": 3,
+                    "label": "Китай",
+                    "value": false
+                },
+                {
+                    "id": 4,
+                    "label": "США",
+                    "value": false
+                },
+                {
+                    "id": 5,
+                    "label": "Канада",
+                    "value": false
+                },
+                {
+                    "id": 6,
+                    "label": "Республика Корея",
+                    "value": false
+                }
+            ]
+        }
+    ]
 }

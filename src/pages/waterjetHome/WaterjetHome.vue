@@ -1,11 +1,10 @@
 <script setup>
 import { computed, onMounted, ref } from 'vue'
 
-import { useCategoryStore } from '@/stores/CategoryStore'
-import { useProductStore } from '@/stores/ProductStore'
-import { useActionStore } from '@/stores/ActionStore'
-import { useSlideStore } from '@/stores/SlideStore'
-import { storeToRefs } from 'pinia'
+import useCategories from '@/composables/useCategories'
+import useProducts from '@/composables/useProducts'
+import useActions from '@/composables/useActions'
+import useSlides from '@/composables/useSlides'
 
 import { WaterjetProductsItem } from '@/components/waterjetProductsItem'
 import { WaterjetCategoriesItem } from '@/components/waterjetCategoriesItem'
@@ -17,22 +16,10 @@ import { WaterjetButton } from '@/components/ui/waterjetButton'
 import { WaterjetTitle } from '@/components/ui/waterjetTitle'
 import { WaterjetPromo } from '@/components/waterjetPromo'
 
-
-const slideStore = useSlideStore()
-const { slides } = storeToRefs(slideStore)
-const { fetchSlides } = slideStore
-
-const productStore = useProductStore()
-const { products } = storeToRefs(productStore)
-const { fetchProducts } = productStore
-
-const actionStore = useActionStore()
-const { actions } = storeToRefs(actionStore)
-const { fetchActions } = actionStore
-
-const categoryStore = useCategoryStore()
-const { categories } = storeToRefs(categoryStore)
-const { fetchCategories } = categoryStore
+const { products, initProducts } = useProducts()
+const { categories, initCategories } = useCategories()
+const { actions, initActions } = useActions()
+const { slides, initSlides } = useSlides()
 
 const randomId = computed(() => Math.floor(Math.random() * products.value.length))
 const actionProduct = computed(() => products.value.find(item => item.id === randomId.value) || products.value[0])
@@ -58,18 +45,10 @@ const tabItems = ref([
 
 
 onMounted(async () => {
-    if(!products.value.length) {
-        await fetchProducts()
-    }
-    if(!actions.value.length) {
-        await fetchActions()
-    }
-    if(!slides.value.length) {
-        await fetchSlides()
-    }
-    if(!categories.value.length) {
-        await fetchCategories()
-    }
+    initProducts()
+    initCategories()
+    initActions()
+    initSlides()
 })
 </script>
 

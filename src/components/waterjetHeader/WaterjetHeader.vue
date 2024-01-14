@@ -1,8 +1,8 @@
 <script setup>
-import { useCategoryStore } from '@/stores/CategoryStore'
-import { useShopStore } from '@/stores/ShopStore'
-import { storeToRefs } from 'pinia'
 import { computed, onMounted, ref } from 'vue'
+
+import useShops from '@/composables/useShops'
+import useCategories from '@/composables/useCategories'
 
 import { WaterjetList } from '../ui/waterjetList'
 import { WaterjetLogo } from '../ui/waterjetLogo'
@@ -10,13 +10,8 @@ import { WaterjetBurger } from '../ui/waterjetBurger'
 import { WaterjetProfileActions } from '../waterjetProfileActions'
 import { WaterjetLocation } from '../waterjetLocation'
 
-const categoryStore = useCategoryStore()
-const { categories } = storeToRefs(categoryStore)
-const { fetchCategories } = categoryStore
-
-const shopStore = useShopStore()
-const { shops } = storeToRefs(shopStore)
-const { fetchShops } = shopStore
+const { currentShop, initShops } = useShops()
+const { categories, initCategories } = useCategories()
 
 const categoryLinks = computed(() => categories.value.map(item => ({
     id: item.id,
@@ -42,12 +37,8 @@ const toggleMenu = () => {
 }
 
 onMounted(async () => {
-    if(!categories.value.length) {
-        await fetchCategories()
-    }
-    if(!shops.value.length) {
-        await fetchShops()
-    }
+    initCategories()
+    initShops()
 })
 </script>
 
@@ -59,12 +50,12 @@ onMounted(async () => {
                     <waterjet-profile-actions class="flex flex-col gap-5 w-full items-start gap-x-2.5 mx-3.5" withText />
                     <waterjet-list class="mx-3.5 gap-x-6 lg:gap-x-12 w-full flex flex-col gap-5 items-start justify-between text-base lg:text-xl font-bold" withIcons :items="topLinks" />
                     <waterjet-list class="flex flex-col gap-5 w-full items-start flex-wrap gap-x-14" :items="categoryLinks" />
-                    <waterjet-location class="flex gap-2.5 w-full items-start text-base lg:text-xl font-bold" />
+                    <waterjet-location :shop="currentShop" class="flex gap-2.5 w-full items-start text-base lg:text-xl font-bold" />
                 </div>
             </waterjet-burger>
             <waterjet-list class="hidden mx-3.5 gap-x-6 lg:gap-x-12 md:flex items-center justify-between text-base lg:text-xl font-bold" :items="topLinks" />
             <waterjet-logo class="w-14 h-14 relative z-30 lg:w-20 lg:h-20" />
-            <waterjet-location class="hidden md:flex items-center text-base lg:text-xl font-bold" />
+            <waterjet-location :shop="currentShop" class="hidden md:flex items-center text-base lg:text-xl font-bold" />
             <waterjet-profile-actions class="hidden md:flex items-center gap-x-2.5 mx-3.5" />
         </div>
         <nav class="hidden md:block bg-gray-200 p-3.5 text-xl">

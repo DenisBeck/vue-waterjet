@@ -1,0 +1,1 @@
+export { default as WaterjetSpoiler } from './WaterjetSpoiler.vue'

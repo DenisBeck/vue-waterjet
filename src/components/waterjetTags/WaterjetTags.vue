@@ -1,26 +1,19 @@
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { computed } from 'vue'
 import { WaterjetList } from '@/components/ui/waterjetList'
 import { WaterjetButton } from '@/components/ui/waterjetButton'
-const emit = defineEmits(['changeFilterValue'])
+const emit = defineEmits(['changeFilterValue', 'showMore'])
 const props = defineProps({
-    tags: Array
+    tags: Array,
+    shownAll: Boolean
 })
 
 const shorted = computed(() => props.tags.slice(0, 3))
-const shownAll = ref(false)
-const moreItem = computed(() => shownAll.value ? 'скрыть' : 'еще')
-
-const showMore = () => {
-    shownAll.value = !shownAll.value
-}
+const moreItem = computed(() => props.shownAll ? 'скрыть' : 'еще')
 
 const toggleActive = ([value]) => {
-
     emit('changeFilterValue', value)
 }
-onMounted(() => console.log(props.tags))
-
 
 </script>
 
@@ -33,7 +26,7 @@ onMounted(() => console.log(props.tags))
                 :label="slotProps.item.label" 
                 :is-active="slotProps.item.value"/>
         </waterjet-list>
-        <waterjet-button @handle-click="showMore" theme="tag" :label="moreItem"/>
+        <waterjet-button @handle-click="() => emit('showMore')" theme="tag" :label="moreItem"/>
     </div>
     
 </template>
