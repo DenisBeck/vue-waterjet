@@ -20,7 +20,8 @@
     "pinia": "^2.1.7",
     "storybook-addon-vue-slots": "^0.9.27",
     "vue": "^3.3.11",
-    "vue-router": "^4.2.5"
+    "vue-router": "^4.2.5",
+    "vue-slider-component": "^4.1.0-beta.7"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.3.3",

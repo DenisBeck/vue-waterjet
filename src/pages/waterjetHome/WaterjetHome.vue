@@ -17,7 +17,7 @@ import { WaterjetTitle } from '@/components/ui/waterjetTitle'
 import { WaterjetPromo } from '@/components/waterjetPromo'
 
 const { products, initProducts } = useProducts()
-const { categories, initCategories } = useCategories()
+const { categories } = useCategories()
 const { actions, initActions } = useActions()
 const { slides, initSlides } = useSlides()
 
@@ -46,7 +46,6 @@ const tabItems = ref([
 
 onMounted(async () => {
     initProducts()
-    initCategories()
     initActions()
     initSlides()
 })

@@ -74,4 +74,13 @@ const activeIndex = ref(0)
 .filters .tab-labels span {
     text-transform: uppercase;
 }
+@media(max-width: 1280px) {
+    .tab-texts {
+        position: absolute;
+        flex-shrink: 1;
+        background-color: #fff;
+        width: 288px;
+        border: 1px solid #eee
+    }
+}
 </style>

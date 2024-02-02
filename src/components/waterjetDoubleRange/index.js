@@ -1,0 +1,1 @@
+export { default as WaterjetDoubleRange } from './WaterjetDoubleRange.vue'

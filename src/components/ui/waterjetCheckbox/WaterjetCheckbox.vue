@@ -2,13 +2,21 @@
 defineProps({
     idName: String,
     label: String,
-    noCheck: Boolean
+    noCheck: Boolean,
+    value: Boolean
 })
+const emit = defineEmits(['update:value'])
 </script>
 
 <template>
     <div class="flex items-center gap-3">
-        <input class="hidden" type="checkbox" :id="idName">
+        <input 
+            class="hidden" 
+            type="checkbox" 
+            :id="idName" 
+            :value="value"
+            @change="emit('update:value', $event.target.checked)" 
+        />
         <label :class="{'custom-checkbox': !noCheck, 'no-check': noCheck}" class="text-sm order-1 flex items-center gap-3 cursor-pointer" :htmlFor="idName">{{ label }}</label>
     </div>
 </template>

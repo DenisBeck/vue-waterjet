@@ -1,10 +1,11 @@
 <script setup>
-import { onMounted, ref, watch, watchEffect } from 'vue'
+import { onMounted, ref, watchEffect } from 'vue'
 
 import useFilters from '@/composables/useFilters'
 import useActions from '@/composables/useActions'
 import useProducts from '@/composables/useProducts'
 import useCategories from '@/composables/useCategories'
+import useBreadcrumbs from '@/composables/useBreadcrumbs'
 
 import { WaterjetList } from '@/components/ui/waterjetList'
 import { WaterjetProductsItem } from '@/components/waterjetProductsItem'
@@ -29,37 +30,17 @@ const {
     sortOptions
 } = useFilters()
 const { initActions, actions } = useActions()
-const { products, initProducts } = useProducts()
-const { categories, initCategories } = useCategories()
+const { products, categorizedProducts, initProducts, renderProducts } = useProducts()
+const { initCategories, categories, currentCategory } = useCategories()
+const { pathItems, initBreadcrumbs } = useBreadcrumbs()
 
-const categorizedProducts = ref(null)
-const currentCategory = ref(null)
-
-const pathItems = ref([])
-const paths = ref(window.location.pathname.split('/'))
+currentCategory.value = categories.value.find(item => item.id === +props.id)
 
 const showAllTags = ref(false)
 const componentKey = ref(0)
 
-const renderProducts = () => {
-    paths.value = window.location.pathname.split('/')
-    if(props.id && products.value.length) {
-        categorizedProducts.value = products.value.filter(item => item.category_id === +props.id)
-    }
-    if(props.id && categories.value.length) {
-        currentCategory.value = categories.value.find(item => item.id === +props.id)
-    }
-    if(paths.value.length === 2) {
-        pathItems.value = [{ text: 'Главная', href: '/' }, { text: 'Каталог', href: '/catalog' }]
-    }
-    if(paths.value.length > 2) {
-        pathItems.value = [
-            { text: 'Главная', href: '/' }, 
-            { text: 'Каталог', href: '/catalog' },
-            { text: currentCategory.value?.category_name, href: `/catalog/category/${props.id}`}
-        ]
-    }
-}
+const filterForm = ref(null)
+const isProductsLayoutLine = ref(false)
 
 const changeFilterValue = (label) => {
     const changingTag = filterTags.value.find(item => item.label === label)
@@ -69,8 +50,18 @@ const changeFilterValue = (label) => {
     componentKey.value += 1
 }
 
+const submitFilterForm = (e) => {
+    e.preventDefault()
+    console.log(e.target)
+}
+
 const showAll = () => {
     showAllTags.value = !showAllTags.value
+}
+
+const changeProductsLayout = () => {
+    isProductsLayoutLine.value = !isProductsLayoutLine.value
+    console.log(isProductsLayoutLine)
 }
 
 onMounted(() => {
@@ -78,12 +69,11 @@ onMounted(() => {
     initCategories()
     initActions()
     initFilters()
-    renderProducts()
 })
 
-watch(() => [props.id, filters.value, products.value.length, actions.value.length], renderProducts)
-watchEffect (() => {
-    useFilters
+watchEffect(() => {
+    initBreadcrumbs(props.id)
+    renderProducts(props.id)
 })
 
 </script>
@@ -98,30 +88,31 @@ watchEffect (() => {
         
         <div class="flex items-center justify-between mb-6 gap-8">
             <waterjet-tags :key="componentKey" :tags="filterTags" :shown-all="showAllTags" @show-more="showAll" @change-filter-value="(args) => changeFilterValue(args)" />
-            <waterjet-select v-if="sortOptions.length" class="ml-auto" :options="sortOptions" />
+            <waterjet-select v-if="sortOptions.length" class="ml-auto" initial-value="Сортировать по" :options="sortOptions" />
             <div class="flex items-center gap-2.5">
-                <waterjet-button icon="WaterjetBricks" class="layout opacity-30 bg-transparent hover:bg-transparent w-5 h-5 text-slate-500"/>
-                <waterjet-button isActive icon="WaterjetLines" class="layout opacity-30 bg-transparent hover:bg-transparent w-5 h-5 text-slate-500"/>
+                <waterjet-button :isActive="!isProductsLayoutLine" :disabled="!isProductsLayoutLine" @handle-click="changeProductsLayout" icon="WaterjetBricks" class="layout opacity-100 bg-transparent hover:bg-transparent w-5 h-5 text-slate-500"/>
+                <waterjet-button :isActive="isProductsLayoutLine" :disabled="isProductsLayoutLine" @handle-click="changeProductsLayout" icon="WaterjetLines" class="layout opacity-100 bg-transparent hover:bg-transparent w-5 h-5 text-slate-500"/>
             </div>
         </div>
 
-        <div class="flex flex-row-reverse">
-            <waterjet-list v-if="props.id" :items="categorizedProducts" v-slot="slotProps" class="basis-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 lg:gap-7">
-                <waterjet-products-item :actions="actions" :item="slotProps.item" />
+        <div class="content flex flex-row-reverse gap-5">
+            <waterjet-list v-if="props.id" :items="categorizedProducts" v-slot="slotProps" :class="{'flex': isProductsLayoutLine, 'grid': !isProductsLayoutLine}" class="basis-auto flex-col grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 lg:gap-7 h-fit">
+                <waterjet-products-item :theme="isProductsLayoutLine ? 'inline' : ''" :actions="actions" :item="slotProps.item" />
             </waterjet-list>
-            <waterjet-list v-else :items="products" v-slot="slotProps" class="basis-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 lg:gap-7">
-                <waterjet-products-item :actions="actions" :item="slotProps.item" />
+            <waterjet-list v-else :items="products" v-slot="slotProps" :class="{'flex': isProductsLayoutLine, 'grid': !isProductsLayoutLine}" class="basis-auto flex-col grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 lg:gap-7">
+                <waterjet-products-item :theme="isProductsLayoutLine ? 'inline' : ''" :actions="actions" :item="slotProps.item" />
             </waterjet-list>
-            <aside class="w-72 basis-72 shrink-0">
-                <waterjet-tabs theme="filters" :tabItems="[{ id: 1, label: 'Параметры' }, { id: 2, label: 'По марке' }]">
+            <aside class="w-72 shrink-0 relative">
+                <waterjet-tabs class="tabs" theme="filters" :tabItems="[{ id: 1, label: 'Параметры' }, { id: 2, label: 'По марке' }]">
                     <template #1>
-                        <div class="flex flex-col w-full ">
-                            <waterjet-spoiler theme="filter" :spoilerItems="spoilerItems">
-                                <template #1>
-                                    
-                                </template>
-                            </waterjet-spoiler>
-                        </div>
+                        <form class="flex flex-col w-full" ref="filterForm">
+                            <waterjet-list v-if="spoilerItems.length" :items="spoilerItems" v-slot="slotProps">
+                                <waterjet-spoiler theme="filter" :spoilerItem="slotProps.item" class="mb-3">
+                                
+                                </waterjet-spoiler>
+                            </waterjet-list>
+                            <waterjet-button label="Выбрать" type="submit" @click="submitFilterForm"/>
+                        </form>
                     </template>
                     <template #2>
 
@@ -136,9 +127,14 @@ watchEffect (() => {
 <style>
 .layout {
     color: black;
+    opacity: 1;
 }
 .layout.active {
-    opacity: 1;
-    cursor: default;
+    opacity: 0.3;
+}
+@media(max-width: 1280px) {
+    .content {
+        flex-direction: column-reverse;
+    }
 }
 </style>

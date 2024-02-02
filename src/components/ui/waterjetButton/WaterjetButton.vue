@@ -1,20 +1,33 @@
 <script setup>
-import { ref } from 'vue'
 import { WaterjetIcon } from '@/icons'
 const emit = defineEmits(['handleClick'])
 const props = defineProps({
     label: String,
     icon: String,
     theme: String,
-    isActive: Boolean
+    isActive: Boolean,
+    disabled: Boolean,
+    type: {
+        type: String,
+        default: 'button'
+    }
 })
-
-const active = ref(props.isActive || false)
 
 </script>
 
 <template>
-    <button @click.prevent="emit('handleClick', [props.label, props.icon])" :class="{'tag': theme === 'tag', 'active': active, 'filter': theme === 'filter' }" class="bg-blue-700 hover:bg-blue-500 transition duration-300 text-white uppercase flex items-center justify-center py-2.5 px-4 gap-2.5">
+    <button
+        :type="type"
+        :disabled="disabled"
+        @click.prevent="emit('handleClick', [props.label, props.icon])" 
+        :class="{
+            'tag': theme === 'tag', 
+            'active': isActive, 
+            'filter': theme === 'filter',
+            'showmore': theme === 'showmore'
+        }" 
+        class="bg-blue-700 hover:bg-blue-500 transition duration-300 text-white uppercase flex items-center justify-center py-2.5 px-4 gap-2.5"
+    >
         <span v-if="label">{{ label }}</span>
         <span v-if="icon"><waterjet-icon :name="icon" /></span>
         <span v-if="!icon && !label">Default</span>
@@ -50,5 +63,17 @@ const active = ref(props.isActive || false)
     color: #2F3035;
     font-size: 16px;
     font-weight: 600;
+}
+.showmore {
+    color: #1C62CD;
+    opacity: 0.7;
+    text-decoration: underline;
+    font-size: 14px;
+    background: transparent;
+    text-transform: none;
+    transition: all 0.3s ease 0s;
+}
+.showmore:hover {
+    opacity: 1;
 }
 </style>

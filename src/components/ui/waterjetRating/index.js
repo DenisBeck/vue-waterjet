@@ -1,0 +1,1 @@
+export { default as WaterjetRating } from './WaterjetRating.vue'

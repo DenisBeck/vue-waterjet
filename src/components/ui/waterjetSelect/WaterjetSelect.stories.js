@@ -17,6 +17,7 @@ export const Default = {
         template: '<waterjet-select v-bind="args" />'
     }),
     args: {
+        initialValue: 'Сортировать по',
         options: [
             {
                 id: 1,
