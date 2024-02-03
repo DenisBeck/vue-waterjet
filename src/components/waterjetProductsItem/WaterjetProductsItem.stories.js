@@ -161,31 +161,6 @@ export const InDetails = {
     }),
     args: {
         theme: 'details',
-        countries: [
-            {
-                "id": 1,
-                "country_name": "Россия"
-            },
-            {
-                "id": 2,
-                "country_name": "Германия"
-            },
-            {
-                "id": 3,
-                "country_name": "Китай"
-            },
-            {
-                "id": 4,
-                "country_name": "США"
-            },
-            {
-                "id": 5,
-                "country_name": "Канада"
-            },
-            {
-                "id": 6,
-                "country_name": "Республика Корея"
-            }
-        ]
+        country: 'Канада'
     }
 }

@@ -20,19 +20,11 @@ const { shownAll, toggleShowmore, moreItem } = useShowmore();
 
 const shorted = computed(() => props.options.length > 4 ? props.options.slice(0, 4) : props.options)
 const shownOptions = computed(() => shownAll.value ? props.options : shorted.value)
-const openDropdown = ref(false)
 
 const inputText = ref('')
+const openDropdown = computed(() => !!inputText.value)
 const filteredByInput = computed(() => props.options.filter(item => inputText.value.length ? item.label.toLowerCase().includes(inputText.value.toLowerCase()) : false ))
 
-const inputValue = (value) => {
-    if(value) {
-        openDropdown.value = true
-    } else {
-        openDropdown.value = false
-    }
-    
-}
 
 const closeDropdown = () => {
     openDropdown.value = false
@@ -59,7 +51,6 @@ onUnmounted(() => {
                 class="border border-slate-200 h-8 px-2 text-xs" 
                 :placeholder="additional.placeholder" 
                 v-model:text="inputText"
-                @update:text="inputValue"
             />
             <ul v-if="openDropdown && filteredByInput.length" @click.stop="" class="absolute top-full left-0 bg-white p-5">
                 <li v-for="option in filteredByInput" :key="option.id">

@@ -8,7 +8,7 @@ export const useCountryStore = defineStore('CountryStore', () => {
 
     const fetchCountries = async () => {
         try {
-            const { data } = await api.countries.getActions()
+            const { data } = await api.countries.getCountries()
             countries.value = data
         } catch (e) {
             console.log(e)

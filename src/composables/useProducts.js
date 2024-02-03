@@ -8,7 +8,7 @@ import { findByFilterLabel } from '@/helpers/findByFilterLabel'
 
 export default () => {
     const productStore = useProductStore()
-    const { products } = storeToRefs(productStore)
+    const { products, isLoading, error } = storeToRefs(productStore)
     const { fetchProducts } = productStore
     const { spoilerItems } = useFilters()
 
@@ -25,7 +25,6 @@ export default () => {
     const renderProducts = (id) => {
         if(spoilerItems.value.length) {
             const power = findByFilterLabel(spoilerItems.value, 'Мощность, л.с.').options.find(item => item.selected).value
-            console.log(findByFilterLabel(spoilerItems.value, 'Мощность двигателя л.с.'))
             const enginePower = findByFilterLabel(spoilerItems.value, 'Мощность двигателя л.с.').options.find(item => item.selected).value
             const filterProperties = computed(() => ({
                 in_stock: findByFilterLabel(spoilerItems.value, 'Наличие').options[1].value === findByFilterLabel(spoilerItems.value, 'Наличие').options[0].value || findByFilterLabel(spoilerItems.value, 'Наличие').options[0].value,
@@ -52,6 +51,8 @@ export default () => {
         products,
         renderProducts,
         categorizedProducts,
-        filteredProducts
+        filteredProducts,
+        isLoading,
+        error
     }
 }

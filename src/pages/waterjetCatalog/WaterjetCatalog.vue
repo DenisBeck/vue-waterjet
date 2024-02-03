@@ -72,7 +72,8 @@ onMounted(() => {
 })
 
 watchEffect(() => {
-    initBreadcrumbs(props.id)
+    spoilerItems,
+    initBreadcrumbs('categories', props.id),
     renderProducts(props.id)
 })
 
@@ -96,10 +97,10 @@ watchEffect(() => {
         </div>
 
         <div class="content flex flex-row-reverse gap-5">
-            <waterjet-list v-if="props.id" :items="categorizedProducts" v-slot="slotProps" :class="{'flex': isProductsLayoutLine, 'grid': !isProductsLayoutLine}" class="basis-auto flex-col grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 lg:gap-7 h-fit">
+            <waterjet-list v-if="props.id" :items="categorizedProducts" v-slot="slotProps" :class="{'flex': isProductsLayoutLine, 'grid': !isProductsLayoutLine}" class="basis-auto grow flex-col grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 lg:gap-7 h-fit">
                 <waterjet-products-item :theme="isProductsLayoutLine ? 'inline' : ''" :actions="actions" :item="slotProps.item" />
             </waterjet-list>
-            <waterjet-list v-else :items="products" v-slot="slotProps" :class="{'flex': isProductsLayoutLine, 'grid': !isProductsLayoutLine}" class="basis-auto flex-col grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 lg:gap-7">
+            <waterjet-list v-else :items="products" v-slot="slotProps" :class="{'flex': isProductsLayoutLine, 'grid': !isProductsLayoutLine}" class="basis-auto grow flex-col grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 lg:gap-7">
                 <waterjet-products-item :theme="isProductsLayoutLine ? 'inline' : ''" :actions="actions" :item="slotProps.item" />
             </waterjet-list>
             <aside class="w-72 shrink-0 relative">

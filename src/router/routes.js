@@ -4,6 +4,7 @@ import { WaterjetHome } from '@/pages/waterjetHome'
 import { WaterjetShops } from '@/pages/waterjetShops'
 import { WaterjetActions } from '@/pages/waterjetActions'
 import { WaterjetDelivery } from '@/pages/waterjetDelivery'
+import { WaterjetProduct } from '@/pages/waterjetProduct'
 
 export default [
     {
@@ -36,5 +37,11 @@ export default [
         path: '/delivery',
         name: 'delivery',
         component: WaterjetDelivery
+    },
+    {
+        path: '/product/:id(\\d+)',
+        name: 'product',
+        component: WaterjetProduct,
+        props: true
     }
 ]

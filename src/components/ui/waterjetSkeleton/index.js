@@ -1,0 +1,1 @@
+export { default as WaterjetSkeleton } from './WaterjetSkeleton.vue'

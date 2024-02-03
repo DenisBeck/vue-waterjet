@@ -11,43 +11,13 @@ const props = defineProps({
     action: Boolean,
     item: Object,
     actions: Object,
-    countries: Object,
-    theme: String
+    theme: String,
+    features: Array
 })
 const { shownAll, moreItem, toggleShowmore } = useShowmore()
 
-const features = ref([
-    {
-        title: 'Производитель',
-        value: props.countries?.find(country => country.id === props.item.features.country_id).country_name
-    },
-    {
-        title: 'Количество мест, шт: ',
-        value: props.item.features.seat_count
-    },
-    {
-        title: 'Мощность, л.с.',
-        value: props.item.features.power
-    },
-    {
-        title: 'Тип двигателя',
-        value: props.item.features.engine_type
-    },
-    {
-        title: 'Год выпуска',
-        value: props.item.features.manufacture_year
-    },
-    {
-        title: 'Мощность двигателя, л.с.',
-        value: props.item.features.engine_power
-    },
-    {
-        title: 'Макс.скорость',
-        value: props.item.features.speed_max
-    }
-])
-const shorted = computed(() => features.value.slice(0, 5))
-const shownFeatures = computed(() => shownAll.value ? features.value : shorted.value)
+const shorted = computed(() => props.features.slice(0, 5))
+const shownFeatures = computed(() => shownAll.value ? props.features : shorted.value)
 
 const like = ref(false)
 const actionIds = computed(() => {
@@ -60,11 +30,14 @@ const currentActions = computed(() => props.actions?.filter(action => actionIds.
 const toggleLike = () => {
     like.value = !like.value
 }
+const dropToCart = () => {
+
+}
 
 </script>
 
 <template>
-    <div v-if="theme === 'details'" class="grid md:grid-cols-2 gap-10">
+    <div v-if="theme === 'details' && item" class="grid md:grid-cols-2 gap-10">
         <div class="product-image relative flex flex-col items-center justify-between">
             <img class="object-contain w-full" :src="item.image_url" :alt="item.title">
             <div class="price text-center">
@@ -86,10 +59,10 @@ const toggleLike = () => {
                 <waterjet-rating :itemRating="item.rating" />
             </div>
             <div class="mb-10">
-                <h3 class="font-bold w-fit text-xl border-b cursor-pointer border-transparent hover:border-blue-700">Характеристики</h3>
+                <h3 class="font-bold w-fit text-xl border-b cursor-pointer border-transparent hover:border-blue-700 mb-2.5">Характеристики</h3>
                 <div>
                     <waterjet-list :items="shownFeatures" v-slot="slotProps" class="flex flex-col gap-2.5">
-                        <div class="flex justify-between" :item="slotProps.item">
+                        <div class="grid grid-cols-2 gap-2" :item="slotProps.item">
                             <div>{{ slotProps.item.title }}</div>
                             <div>{{ slotProps.item.value }}</div>
                         </div>
@@ -101,11 +74,11 @@ const toggleLike = () => {
         </div>
     </div>
     <div v-else-if="item" :class="{'product-item-inline': theme === 'inline'}" class="product-item border border-slate-300 relative h-full flex flex-col justify-between">
-        <div class="product-image mt-10 flex justify-center mb-2 px-6 min-w-48 min-h-48">
+        <router-link :to="`/product/${item.id}`" class="product-image mt-10 flex justify-center mb-2 px-6 min-w-48 min-h-48">
             <img class="object-contain" :src="item.image_url" :alt="item.title">
-        </div>
+        </router-link>
         <div class="product-body flex flex-col">
-            <div :class="{'font-bold': action}" class="product-text text-lg text-center max-h-20 overflow-hidden mb-2 px-10">{{ item.title }}</div>
+            <router-link :to="`/product/${item.id}`" :class="{'font-bold': action}" class="product-text text-lg text-center max-h-20 overflow-hidden mb-2 px-10">{{ item.title }}</router-link>
             <div v-if="action" class="bg-slate-200 flex items-center justify-center py-6 px-5">
                 <p class="text-center text-lg flex flex-col">Акция действует до
                     <span class="text-blue-700 font-bold">31.08.2020</span>

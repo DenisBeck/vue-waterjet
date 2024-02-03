@@ -15,16 +15,16 @@ export default () => {
     const initFilters = async () => {
         if(!filters.value.length) {
             await fetchFilters()
-            spoilerItems.value = filters.value.find(item => item.filters).filters.map(item => ({
-                id: item.id, 
-                label: item.filter_name, 
-                options: item.filter_options, 
-                type: item.filter_type,
-                open: false
-            }))
-            filterTags.value = filters.value.find(item => item.tags).tags
-            sortOptions.value = filters.value.find(item => item.options).options
         } 
+        spoilerItems.value = filters.value.find(item => item.filters).filters.map(item => ({
+            id: item.id, 
+            label: item.filter_name, 
+            options: item.filter_options, 
+            type: item.filter_type,
+            open: false
+        }))
+        filterTags.value = filters.value.find(item => item.tags).tags
+        sortOptions.value = filters.value.find(item => item.options).options
     }
     
     return {
