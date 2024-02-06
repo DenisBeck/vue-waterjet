@@ -1,7 +1,7 @@
 import { storeToRefs } from 'pinia'
 
 import { useCategoryStore } from '@/stores/CategoryStore'
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 
 export default () => {
     const categoryStore = useCategoryStore()
@@ -9,6 +9,7 @@ export default () => {
     const { fetchCategories } = categoryStore
 
     const currentCategory = ref(null)
+    const categoryLabels = computed(() => categories.value.map(item => ({ id: item.id, label: item.category_name })))
 
     const initCategories = async () => {
         if(!categories.value.length) {
@@ -19,6 +20,7 @@ export default () => {
     return {
         initCategories,
         categories,
-        currentCategory
+        currentCategory,
+        categoryLabels
     }
 }

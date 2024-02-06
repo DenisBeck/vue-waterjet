@@ -5,6 +5,8 @@ import useBreadcrumbs from '@/composables/useBreadcrumbs'
 import useProducts from '@/composables/useProducts'
 import useCountries from '@/composables/useCountries'
 import useShops from '@/composables/useShops'
+import useCategories from '@/composables/useCategories'
+import useActions from '@/composables/useActions'
 
 import { WaterjetBreadcrumbs } from '@/components/waterjetBreadcrumbs'
 import { WaterjetProductsItem } from '@/components/waterjetProductsItem'
@@ -12,6 +14,8 @@ import { WaterjetTabs } from '@/components/waterjetTabs'
 import { WaterjetList } from '@/components/ui/waterjetList'
 import { WaterjetShopsBlock } from '@/components/waterjetShopsBlock'
 import { WaterjetSkeleton } from '@/components/ui/waterjetSkeleton'
+import { WaterjetTitle } from '@/components/ui/waterjetTitle'
+import { WaterjetSlider } from '@/components/waterjetSlider'
 
 const props = defineProps({
     id: String
@@ -20,6 +24,8 @@ const { pathItems, initBreadcrumbs } = useBreadcrumbs()
 const { products, initProducts, isLoading, error } = useProducts()
 const { initCountries, countries } = useCountries()
 const { initShops, shops } = useShops()
+const { categories, categoryLabels } = useCategories()
+const { actions, initActions } = useActions()
 
 const product = computed(() => products.value.find(item => item.id === +props.id))
 const country = computed(() => countries.value.find(item => item.id === product.value?.features.country_id)?.country_name)
@@ -90,6 +96,7 @@ onMounted(() => {
     initCountries(),
     initProducts(),
     initShops(),
+    initActions(),
     initBreadcrumbs('products', props.id)
 })
 
@@ -113,6 +120,7 @@ watchEffect(() => {
         <div v-else>{{ error.text }}</div>
     </section>
     <section class="max-w-screen-xl mx-auto px-5 mb-20 w-full">
+        <h1 hidden>Информация о товаре</h1>
         <waterjet-tabs theme="categories" :tabItems="detailItems">
             <template #2>
                 <waterjet-list :items="features" theme="evenOdd" v-slot="slotProps" class="flex flex-col mx-auto max-w-3xl">
@@ -123,7 +131,17 @@ watchEffect(() => {
                 </waterjet-list>
             </template>
             <template #4>
-                <waterjet-shops-block :shopsWithProduct="product?.in_stock" :shops="shops" />
+                <waterjet-shops-block :shopsWithProduct="product?.in_stock" :shops="shops" class="shops mx-auto" />
+            </template>
+        </waterjet-tabs>
+    </section>
+    <section class="max-w-screen-xl mx-auto px-5 mb-20 w-full">
+        <waterjet-title label="С этим товаром покупают" class="mb-4"/>
+        <waterjet-tabs v-if="categoryLabels.length" :tabItems="categoryLabels" theme="categories">
+            <template v-for="category in categories" #[category.id] :key="category.id">
+                <waterjet-slider :slidesOnPage="4" :slides="products.filter(item => item.category_id === category.id)" navigation v-slot="slotProps" class="products-slider">
+                    <waterjet-products-item :actions="actions" :item="slotProps.item" />
+                </waterjet-slider>
             </template>
         </waterjet-tabs>
     </section>
@@ -133,5 +151,8 @@ watchEffect(() => {
 .even-odd:nth-child(odd) {
     background: rgb(229 231 235);
 }
-
+.shops {
+    min-width: 700px;
+    overflow: hidden;
+}
 </style>

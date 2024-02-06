@@ -8,6 +8,16 @@ export default () => {
     const { products } = useProducts()
 
     const paths = ref(window.location.pathname.split('/'))
+    const getTextByPathName = (pathName) => {
+        switch(pathName) {
+            case 'catalog':
+                return 'Каталог';
+            case 'shops':
+                return 'Магазины';
+            default:
+                return '';
+        }
+    }
     const pathItems = ref([])
     const productCategory = ref(0)
 
@@ -16,7 +26,7 @@ export default () => {
             productCategory.value = products.value?.find(item => item.id === +id)?.category_id
         }
         if(paths.value.length === 2) {
-            pathItems.value = [{ text: 'Главная', href: '/' }, { text: 'Каталог', href: '/catalog' }]
+            pathItems.value = [{ text: 'Главная', href: '/' }, { text: getTextByPathName(paths.value[1]), href: `/${paths.value[1]}` }]
         }
         if(paths.value.length > 2 && resourse === 'categories') {
             pathItems.value = [

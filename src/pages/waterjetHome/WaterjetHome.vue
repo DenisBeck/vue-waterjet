@@ -17,13 +17,13 @@ import { WaterjetTitle } from '@/components/ui/waterjetTitle'
 import { WaterjetPromo } from '@/components/waterjetPromo'
 
 const { products, initProducts } = useProducts()
-const { categories } = useCategories()
+const { categories, categoryLabels } = useCategories()
 const { actions, initActions } = useActions()
 const { slides, initSlides } = useSlides()
 
 const randomId = computed(() => Math.floor(Math.random() * products.value.length))
 const actionProduct = computed(() => products.value.find(item => item.id === randomId.value) || products.value[0])
-const categoryLabels = computed(() => categories.value.map(item => ({ id: item.id, label: item.category_name })))
+
 
 const tabItems = ref([
     {

@@ -11,4 +11,5 @@ export { default as WaterjetLeftIcon } from './WaterjetLeftIcon.vue'
 export { default as WaterjetRightIcon } from './WaterjetRightIcon.vue'
 export { default as WaterjetLines } from './WaterjetLines.vue'
 export { default as WaterjetBricks } from './WaterjetBricks.vue'
+export { default as WaterjetSearch } from './WaterjetSearch.vue'
 

@@ -19,7 +19,7 @@
     "axios": "^1.6.3",
     "pinia": "^2.1.7",
     "storybook-addon-vue-slots": "^0.9.27",
-    "vue": "latest",
+    "vue": "^3.4.15",
     "vue-router": "^4.2.5",
     "vue-slider-component": "^4.1.0-beta.7"
   },

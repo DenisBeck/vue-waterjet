@@ -1,8 +1,10 @@
 <script setup>
+import { WaterjetButton } from '../waterjetButton';
 // eslint-disable-next-line no-undef
 const text = defineModel('text')
 defineProps({
     placeholder: String,
+    icon: String
     // text: String
 })
 // const emit = defineEmits(['update:text'])
@@ -21,5 +23,6 @@ defineProps({
             :placeholder="placeholder"
             v-model="text"
         />
+        <waterjet-button v-if="icon" :icon="icon" />
     </div>
 </template>

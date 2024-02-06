@@ -5,25 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    body {
+        background: rgba(0, 0, 0, 0.4);
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        justify-content: center;
+    }
+    .box1 {
+        width: 50em;
+        height: 300px;
+        background: #fff;
+        border: 1px solid black;
+    }
+    .box1-wrapper {
+        transform: translateY(-50px);
+        background:  url('./src/assets/img/snowjets/image4.png') right bottom/contain no-repeat;
+        height: 100%;
+    }
+</style>
 <body>
     <div id="container">
         <button id="button">
             click
         </button>
+        <div class="box1">
+            <div class="box1-wrapper"></div>
+            
+        </div>
     </div>
-    <script>
-        const tickets = [
-            {from: 'C.-Петербург', to: 'Минск'},
-            {from: 'Киев', to: 'Новосибирск'},
-            {from: 'Череповец', to: 'Москва'},
-            {from: 'Минск', to: 'Киев'},
-            {from: 'Москва', to: 'C.-Петербург'}
-        ];
-        
-        const citiesFrom = tickets.map(item => item.from)
-        const start = citiesFrom.find(item => !tickets.some(ticket => ticket.to === item))
-        console.log(start)
-
-    </script>
 </body>
 </html>
